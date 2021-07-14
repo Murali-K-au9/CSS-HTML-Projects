@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Awesome</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/6aec8225ef.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Nav-->
+    <section id="nav">
+        <div>
+            <ol>
+                <li class="logo"><img src="images\Plany icon.png" alt="Img" width="60rem"></li>
+                <li class="logo">Plant <br> Awesome</li>
+            </ol>
+            <ul id="ul1">
+                <li class="li1"><a href="#Contact">Contact</a></li>
+                <li class="li1"><a href="#Reviews">Reviews</a></li>
+                <li class="li1"><a href="#Store">Store</a></li>
+                <li class="li1"><a href="#/">Home</a></li>
+            </ul>
+        </div>   
+    </section>    
+        <!--Title-->
+        <div id="box1">
+            <h1>Plant In Every Home</h1><br>
+            <p>Create incredible plant design for offices or apartments for your freshness.
+            </p><br><br>
+            <button class="gbtnHollow">Shop Now <i class="fas fa-arrow-circle-right"></i></button>
+        </div>
+        <div id="box2" class="parent">
+            <img class="image1" src="images\sm1.png" />
+            <img class="image2" src="images\Cactus-1.png" alt="Cactus" >
+        </div>
+    <!--Filter-->
+    <section id="filter">
+        <table>
+            <tr>
+                <th class="th1">Categories</th>
+                <th class="th">Sort By</th>
+                <th class="th">Size Option</th>
+                <th class="th">Price Filter</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul class="ul2" style="padding: 0; text-align:left;">
+                        <li>
+                            <input type="radio" name="categories" value="Pairs">
+                            <label for="pairs">Pairs</label>
+                        </li>
+                        <li> <input type="radio" name="categories" value="Potted">
+                            <label for="potted">Potted</label>
+                        </li>
+                        <li> <input type="radio" name="categories" value="Small">
+                            <label for="small">Small</label>
+                        </li>
+                        
+                        <li> <input type="radio" name="categories" value="Flower">
+                            <label for="flower">Flower</label>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="ul2" style="padding: 0; text-align:left;">
+                        <li>
+                            <input type="radio" name="Sort By" value="Newest">
+                            <label for="Newest">Newest</label>
+                        </li>
+                        <li> <input type="radio" name="Sort By" value="Popular">
+                            <label for="Popular">Popular</label>
+                        </li>
+                        <li> <input type="radio" name="Sort By" value="Low price">
+                            <label for="Low price">Low price</label>
+                        </li>
+                        <li> <input type="radio" name="Sort By" value="High price">
+                            <label for="High price">High price</label>
+                        </li>
+                    </ul>
+                </td>
+
+                <td>
+                    <ul class="ul2" style="padding: 0; text-align:left;">
+                        <li><button class="size">Small</button></li>
+                        <li><button class="size">Medium</button></li>
+                        <li><button class="size">Tall</button></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="ul2" style="padding: 0; text-align:left;">
+                        <li><input class="slider" type="range" min="250" max="1000" value="250" class="slider" id="myRange">
+                            <p>Price:₹ <span id="demo"></span></p>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+
+        </table>
+    </section>
+    <!--Items-->
+    <section class="grid-container">
+        <div class="grid-item">
+            <img src="images\2Cactus-vector.png" alt="Cactus-vector" width="25%">
+            <p class="name">Vector Cactus</p>
+            <p class="price">₹ 350/-</p>
+            <p ><button>Add to Cart</button></p>
+        </div>
+        <div class="grid-item">
+            <img src="images\3Aesthetic-tumblr.png" alt="Aesthetic-tumblr"width="60%">
+            <p class="name">Aesthetic Tumblr</p>
+            <p class="price">₹ 480/-</p>
+            <p ><button>Add to Cart</button></p>
+        </div>
+        <div class="grid-item">
+            <img src="images\4Cactus-desk-plant.png" alt="Cactus-desk-plant"width="70%">
+            <p class="name">Cactus Desk Plant</p>
+            <p class="price">₹ 260/-</p>
+            <p ><button>Add to Cart</button></p>
+        </div>
+        <div class="grid-item">
+            <img src="images\5Sniper.png" alt="Sniper"width="60%">
+            <p class="name">Sniper</p>
+            <p class="price">₹ 500/-</p>
+            <p ><button>Add to Cart</button></p>
+        </div>
+        <div class="grid-item">
+            <img src="images\Cacti Faux.jpeg" alt="Cacti Faux"width="75%">
+            <p class="name">Cacti Faux</p>
+            <p class="price">₹ 380/-</p>
+            <p ><button>Add to Cart</button></p>
+        </div>
+        <div class="grid-item">
+            <img src="images\Indoor Cactus.jpg" alt="Indoor Cactus"width="75%">
+            <p class="name">Indoor Cactus</p>
+            <p class="price">₹ 560/-</p>
+            <p ><button>Add to Cart</button></p>
+        </div>
+        <div class="grid-item">
+            <img src="images\8Flowerpot-citron.png" alt="Flowerpot-citron"width="60%">
+            <p class="name">Flower Citron</p>
+            <p class="price">₹ 280/-</p>
+            <p ><button>Add to Cart</button></p>
+        </div>
+        <div class="grid-item">
+            <img src="images\Decorative.jpeg" alt="Decorative"width="34%">
+            <p class="name">Decorative</p>
+            <p class="price">₹ 850/-</p>
+            <p ><button>Add to Cart</button></p>
+        </div>
+        <div class="grid-item">
+            <img id="img9"src="images\10Cactus-clipart.png" alt="Cactus-clipart"width="45%">
+            <p class="name">Cactus Clipart</p>
+            <p class="price">₹ 250/-</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+        <div class="grid-item">
+            <img src="images\11Cactus-flower-.png" alt="Cactus-flower"width="67%">
+            <p class="name">Cactus Flower</p>
+            <p class="price">₹ 320/-</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+        <div class="grid-item">
+            <img src="images\12House-plant-.png" alt="House-plant"width="49%">
+            <p class="name">House Plant</p>
+            <p class="price">₹ 600/-</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+        <div class="grid-item">
+            <img src="images\Cactus-1.png" alt="Cactus"width="68%">
+            <p class="name">Cactus</p>
+            <p class="price">₹ 800/-</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+    </section>
+    <!--Matter-->
+    <div class="float-container">
+
+        <div class="float-child" style="background-color:#DCFFCC;  border-radius: 70% 40% 100% 40%;">
+          
+            <img src="images\Cactus (46).png" alt="Article">
+          
+        </div>
+        
+        <div class="float-child" id="content">
+          
+            <h2>Come with us grow up your plant.</h2><br>
+            <p>Caring of plants can be very rewarding.
+            Even if they include ferns and don't produce fragrant flowers. 
+            </p>
+          
+        </div>
+        
+      </div>
+    <section>
+        <div class="float-container-2">
+
+            <div class="float-child-2" id="content2" >
+              
+                <h2>Come with us grow up your plant.</h2><br>
+                <p>Caring of plants can be very rewarding.
+                Even if they include ferns and don't produce fragrant flowers. 
+                </p>   
+            </div>
+            
+            <div class="float-child-2" >
+                <img src="images\matter11.png" alt="Article">
+                
+            </div>
+            
+    </section>
+    <!--Cx reviews-->
+    <!---Deal of the day-->
+    <!--Upcoming plants-->
+    <!--Invite-->
+    <footer class="footer">
+        <div class="logod">
+            <ol>
+                <li class="logo-1" id="im2" class="i2"><img src="images\Plany icon.png" alt="Img" width="50px"></li>
+                <li class="logo-1">Plant <br> Awesome</li>
+            </ol>
+        </div>
+        <div class="footer-chaild">
+            <table class="table2">
+                <tr>
+                    <th class="th2">About Us</th>
+                    <th class="th2">Legal</th>
+                    <th class="th2">Keep In Touch</th>
+                    <th class="th2" id="th3">Follow Us</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul  style=" text-align:left;">
+                            <li><a href="#/">Our Story</a></li> 
+                            <li><a href="#/">Benefits</a></li>     
+                            <li><a href="#/">FAQ</a></li>            
+                        </ul>
+                    </td>
+                    <td>
+                        <ul >
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Conditions</a></li>  
+                            <li><a href="#">Pricy policy</a></li>     
+                               
+                                   
+                        </ul>
+                    </td>
+                    <td>
+                        <ul >
+                            <li><a href="#">hello@plant-awe.org</a></li> 
+                            <li><a href="#">+91-9121-265467</a></li>
+                            <li><a href="#">Fax: 212-069875</a></li>          
+                        </ul>
+                    </td>
+                    <td>
+                        <ul >
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li> 
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>     
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>             
+                        </ul>
+                    </td>
+            </table>    
+        </div>
+        <div>
+            <img class="im1" src="images\Planters-.png" alt="footerimg">
+        </div>
+    </footer>
+    <!--Footer-->
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function () {
+            output.innerHTML = this.value;
+        }
+    </script>
+</body>
+
+</html>
