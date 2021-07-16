@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="calsi">
+            <div class="calsi_main">
+                <form name="form1" action="Calculator.html" class="calsi_form">
+                    <input type="text" name="answer" id="display">
+                    <br>
+                    <div class="keys">
+                    <input type="button" value="AC" class="operator1" onclick="form1.answer.value=''">
+                    <input type="button" value="C" class="operator1" onclick="form1.answer.value=''">
+                    <input type="button" value="%" class="operator" onclick="form1.answer.value+='%'">
+                    <input type="button" value="÷" class="operator" onclick="form1.answer.value+='/'">
+                    
+                    <input type="button" value="7" class="numeric" onclick="form1.answer.value+='7'">
+                    <input type="button" value="8" class="numeric" onclick="form1.answer.value+='8'">
+                    <input type="button" value="9" class="numeric" onclick="form1.answer.value+='9'">
+                    <input type="button" value="x" class="operator" onclick="form1.answer.value+='*'">
+                  
+                    <input type="button" value="4" class="numeric" onclick="form1.answer.value+='4'">
+                    <input type="button" value="5" class="numeric" onclick="form1.answer.value+='5'">
+                    <input type="button" value="6" class="numeric" onclick="form1.answer.value+='6'"> 
+                    <input type="button" value="-" class="operator" onclick="form1.answer.value+='-'"> 
+                   
+                    <input type="button" value="1" class="numeric" onclick="form1.answer.value+='1'"> 
+                    <input type="button" value="2" class="numeric" onclick="form1.answer.value+='2'">
+                    <input type="button" value="3" class="numeric" onclick="form1.answer.value+='3'"> 
+                    <input type="button" value="+" class="operator" onclick="form1.answer.value+='+'">
+                  
+                    <input type="button" value="0" class="numeric" onclick="form1.answer.value+='0'"> 
+                    <input type="button" value="." class="numeric" onclick="form1.answer.value+='.'">
+                    <input type="button" value="=" class="operator" onclick="form1.answer.value=eval(form1.answer.value)"> 
+                    <input type="button" value="⏎" class="operator2" onclick="document.getElementById('display').value=form1.answer.value.slice(0,-1)">
+                    </div>
+                </form>
+            </div>  
+        </div>
+    </body>
+</html>

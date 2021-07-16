@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+    background-color: aliceblue;
+}
+.calsi{
+    background-image: url('https://bit.ly/3wMwSjh');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.calsi_main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: -6px -6px 9px #e9e9e9, 6px 6px 9px #515E63;
+    padding: 3rem 1.5rem;
+    border-radius: 30px;
+}
+input, button{
+    outline: none; 
+}
+#display{
+    width: 380px;
+    height: 55px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: inset -1px -1px 2px #fff, inset 2px 2px 2px #515E63 ;
+    text-align: right;
+    background: #e9e9e9;
+    font-size: 25px;   
+}
+.keys{
+   display: grid;
+   grid-template-columns:repeat(4, 1fr);
+   grid-row-gap: 0.8rem;
+   grid-column-gap: rem; 
+   margin-top: 25px;
+   padding-left:25px;
+   padding-right: auto;
+}
+.operator, .numeric, .operator1, .operator2{
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background: #e9e9e9;
+    box-shadow: -6px -6px 9px #fff, 6px 6px 9px #515E63;
+    font-weight:bold;
+}
+.operator{
+    color: #FF7600;
+}
+.operator1{
+  color: #005792;  
+}
+.operator2{
+    color: #CE1212;
+}
+.operator:hover{
+    background-color:#ccc;
+}
+.operator:active{
+    box-shadow: inset -1px -1px 2px #fff, inset 2px 2px 2px #515E63 ;
+}
+.operator1:hover{
+    background-color:#ccc;
+}
+.operator1:active{
+    box-shadow: inset -1px -1px 2px #fff, inset 2px 2px 2px #515E63 ;
+}
+.operator2:hover{
+    background-color:#ccc;
+}
+.operator2:active{
+    box-shadow: inset -1px -1px 2px #fff, inset 2px 2px 2px #515E63 ;
+}
+.numeric:hover{
+    background-color:#ccc;
+}
+.numeric:active{
+    box-shadow: inset -1px -1px 2px #fff, inset 2px 2px 2px #515E63 ;
+}
+@media (max-width:452px) {
+    .calsi_main{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: -6px -6px 9px #fff, 6px 6px 9px #515E63;
+        padding: 2rem 1rem;
+        border-radius: 30px;
+    }
+    #display{
+        width: 250px;
+        height: 38px;
+        border: none;
+        border-radius: 30px;
+        box-shadow: inset -1px -1px 2px #fff, inset 2px 2px 2px #515E63 ;
+        text-align: right;
+        background: #e9e9e9;
+        font-size: 15px;   
+    }
+    .keys{
+       display: grid;
+       grid-template-columns:repeat(4, 1fr);
+       grid-row-gap: 0.9rem;
+       grid-column-gap: rem; 
+       margin-top: 18px;
+       padding-left:12px;
+       padding-right: auto;
+    }
+    .operator, .numeric, .operator1, .operator2{
+        width: 35px;
+        height: 35px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        background: #e9e9e9;
+        box-shadow: -6px -6px 9px #fff, 6px 6px 9px #515E63;
+        font-weight:bold;
+    }
+}
+@media (max-width:305px) {
+    .calsi_main{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: -6px -6px 9px #fff, 6px 6px 9px #515E63;
+        padding: 2rem 1rem;
+        border-radius: 26px;
+    }
+    #display{
+        width: 200px;
+        height: 35px;
+        border: none;
+        border-radius: 30px;
+        box-shadow: inset -1px -1px 2px #fff, inset 2px 2px 2px #515E63 ;
+        text-align: right;
+        background: #e9e9e9;
+        font-size: 13px;   
+    }
+    .keys{
+       display: grid;
+       grid-template-columns:repeat(4, 1fr);
+       grid-row-gap: 0.9rem;
+       grid-column-gap: rem; 
+       margin-top: 15px;
+       padding-left:10px;
+       padding-right: auto;
+    }
+    .operator, .numeric, .operator1, .operator2{
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        background: #e9e9e9;
+        box-shadow: -6px -6px 9px #fff, 6px 6px 9px #515E63;
+        font-weight:bold;
+    }
+}
+
+
